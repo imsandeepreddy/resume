@@ -1,112 +1,339 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link href="style.css" rel="stylesheet">
-		<title>Sandeep Reddy</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	</head>
+<head>
+  <title>Sandeep Reddy </title>
+  <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+  <style>
+    /* Add styles for the navigation menu */
+    #nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    #nav-menu a {
+      color: white;
+      text-decoration: none;
+    }
+    #nav-menu .active {
+      background-color: #007bff;
+    }
+    /* Add styles for the section. */
+    .section {
+      padding-top: 75px; /* Add space for the fixed navigation menu */
+    }
+    h5 {
+        margin-bottom: 20px; /* Adjust the value as needed */
+      }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#nav-menu">
+  <nav id="nav-menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Sandeep Reddy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+      data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#professional-summary">Professional Summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#technical-skills">Technical Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work-experience">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+<section id="" class="section">
+  <div class="d-flex align-items-center justify-content-between">
+    <div>
+      <h3>Sandeep Reddy M</h3>
+      <h6>sandeep.reddy1992@gmail.com</h6>
+      <h6>9666527741</h6>
+    </div>
+    <img src="AWSBadges.png" alt="AWS Certifications" style="max-width: 210px;">
+  </div>
+  <p>With a decade in IT, I've evolved from a Linux Systems Administrator to a seasoned DevOps Engineer. Proficient in Software Configuration Management, Version Control, and Build/Release Management, I specialize in orchestrating Kubernetes deployments in Azure and AWS, alongside on-premises server reliability. Extensive Docker use underscores my skills, poised for agile, robust software delivery.</p>
+</section>
 
-	<body>
-		<header id="header">
-			<!-- resume header with your name, title -->
-			<h1>Sandeep Reddy</h1>
-			<hr>
-			DevOps Engineer
-			<hr>
-		</header>
-		<main>
-			<article id="mainLeft">
-				<section>
-					<h2>CONTACT</h2>
-					<!-- contact info including social media -->
-                    <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:sandeepreddym03@gmail.com">sandeepreddym03@gmail.com</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                        <a href="https://github.com/imsandeepreddy" target="_blank" rel="noopener noreferrer">imsandeepreddy</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <a href="https://linkedin.com/in/sandeep-reddy-00a8b839/" target="_blank" rel="noopener noreferrer">sandeep-reddy</a>
-                    </p>
-				</section>
-				<section>
-					<h2>SKILLS</h2>
-					<!-- your skills -->
-					<p>Github Actions, Jenkins, Ansible</p>
-					<p>Terraform, Docker, Kubernetes, AWS..</p>
-				</section>
-				<section>
-					<h2>EDUCATION</h2>
-					<!-- your education -->
-                    <h3>Bachelors in Technology</h3>
-                    <p>
-                        SRM University, Chennai
-                    </p>
-                    <p>
-                        2009-2013
-                    </p>
-				</section>            
-			</article>
-			<article id="mainRight">
-				<section>
-					<h2>ABOUT</h2>
-					<!-- about you -->
-					<p>DevOps/Cloud enthusiast with 8 years of IT experience. Worked as Linux Systems Administrator for 2 years and 4 years as DevOps engineer with expertise in areas of Software Configuration Management, Version Control, Build and Release management.</p>
-				</section>	
-					
-				<section>
-					<h2>WORK EXPERIENCE</h2>
-					<!-- your work experience -->
-                    <h3>DevOps Engineer</h3>
-                    <p>
-                            TCS | 2021 - Till date
-                    </p>
-                    <p>
-                            Configuring and maintaining CICD pipelines for applications with various technology stacks.
-                    </p>
-                    <ul>
-                            <li>Configured CICD pipeline for deployments on to Kubernetes</li>
-                            <li>Configured Jenkins pipeline using shared libraries</li>
-							<li>Configured CICD pipeline for deployments on to Kubernetes</li>
-                            <li>Configured Jenkins pipeline using shared libraries</li>
-							<li>Configured CICD pipeline for deployments on to Kubernetes</li>
-                            <li>Configured Jenkins pipeline using shared libraries</li>
-							<li>Configured CICD pipeline for deployments on to Kubernetes</li>
-                            <li>Configured Jenkins pipeline using shared libraries</li>
-                            
-                    </ul>
-				</section>
-					<section>
-					<h3>DevOps Engineer</h3>
-                    <p>
-                            Cognizant | 2018 - 2021
-                    </p>
-                    <p>
-                            Configuring and maintaining CICD pipelines for applications with various technology stacks.
-                    </p>
-                    <ul>
-                            <li>Configured CICD pipeline for deployments on to Kubernetes</li>
-                            <li>Configured Jenkins pipeline using shared libraries</li>
-                            
-                    </ul>
-					</section>
-					<section>
-					<h3>Automation Test Engineer</h3>
-                    <p>
-                            Accenture | 2013 - 2018
-                    </p>
-                    <p>
-                            Configuring and maintaining CICD pipelines for applications with various technology stacks.
-                    </p>
-                    <ul>
-                            <li>Configured CICD pipeline for deployments on to Kubernetes</li>
-                            <li>Configured Jenkins pipeline using shared libraries</li>
-                            
-                    </ul>
-				</section>
-			</article>
-		</main>
-	</body>
-</html>
+    
+<section id="professional-summary" class="section">
+  <h3>Professional Summary</h3>
+  <ul>
+    <li><strong>Over a decade</strong> of IT expertise, with 2 years as a Linux Systems Administrator and nearly 6 years as a DevOps Engineer, specializing in <strong>Software Configuration Management</strong>, <strong>Version Control</strong>, and <strong>Build and Release management</strong>.</li>
+
+    <li>Proficient in <strong>GIT</strong>, adept at source code management, branch creation, and repository administration.</li>
+
+    <li>Experienced in utilizing <strong>Ant, Maven, Gradle</strong>, and <strong>MS Build</strong> to produce deployable artifacts from source code.</li>
+
+    <li>Skilled in configuring and managing Continuous Integration tools, including <strong>Jenkins</strong> and <strong>GitHub Actions</strong>, for automated builds.</li>
+
+    <li>Expertise in employing <strong>Nexus</strong> and <strong>Artifactory Repository Managers</strong> for Maven builds.</li>
+
+    <li>Proficient in scripting with <strong>Bash</strong> for streamlined deployment of Java applications on bare servers.</li>
+
+    <li>Collaborated with development support teams to establish a Docker-based continuous delivery environment.</li>
+
+    <li>Utilized <strong>Ansible</strong> as a robust configuration management tool.</li>
+
+    <li>Developed, managed, and maintained automation infrastructure using <strong>Ansible</strong> and <strong>Terraform</strong>, fostering continuous deployment and mutable infrastructure.</li>
+
+    <li>Designed and implemented CI/CD pipelines using <strong>Ansible</strong> and <strong>Jenkins</strong>.</li>
+
+    <li>Managed and optimized DevOps toolchains within <strong>AWS</strong> cloud infrastructure.</li>
+
+    <li>Created <strong>Ansible playbooks</strong> for Infrastructure as a Service (IaaS) provisioning.</li>
+
+    <li>Leveraged <strong>GitHub</strong> and <strong>Jenkins</strong> for seamless continuous integration.</li>
+
+    <li>Proficient in <strong>Bash</strong> and <strong>AWS CLI</strong> for crafting administrative toolsets.</li>
+
+    <li>Expertly managed <strong>Amazon Web Services</strong>, including <strong>EC2</strong>, <strong>S3</strong>, <strong>RDS</strong>, <strong>EBS</strong>, <strong>ELB</strong>, <strong>Auto-Scaling</strong>, <strong>AMI</strong>, and <strong>IAM</strong> through the <strong>AWS Console</strong>.</li>
+
+    <li>Crafted <strong>AWS CloudFormation templates</strong> for custom-sized <strong>VPCs</strong>, <strong>subnets</strong>, <strong>EC2 instances</strong>, <strong>ELBs</strong>, and <strong>Security Groups</strong>.</li>
+
+    <li>Demonstrated proficiency in creating highly available and scalable AWS stacks using <strong>EC2 Auto Scaling functionality</strong>.</li>
+
+    <li>Integrated cloud-native technologies such as <strong>Docker</strong> and <strong>Kubernetes</strong> into CI/CD pipelines.</li>
+
+    <li>Extensive experience with <strong>AWS</strong> and <strong>Azure</strong> technologies, including <strong>cloud-native services</strong>, to architect, deploy, and manage scalable and reliable <strong>cloud infrastructure</strong>.</li>
+</ul>
+
+</section>
+<section id="technical-skills" class="section">
+  <h3>Technical Skills</h3>
+  <table class="table table-sm table-bordered">
+    <tbody>
+      <tr>
+        <th scope="row" width="30%">Version Tools</th>
+        <td>GIT, GITLAB</td>
+      </tr>
+      <tr>
+        <th scope="row">Build Tools</th>
+        <td>Ant, Maven, Gradle, MS Build</td>
+      </tr>
+      <tr>
+        <th scope="row">CI Tools</th>
+        <td>GitHub Actions, Jenkins</td>
+      </tr>
+      <tr>
+        <th scope="row">Configuration Management Tools</th>
+        <td>Ansible</td>
+      </tr>
+      <tr>
+        <th scope="row">Languages</th>
+        <td>Java, Python, Bash scripting</td>
+      </tr>
+      <tr>
+        <th scope="row">Database</th>
+        <td>DB2, mysql</td>
+      </tr>
+      <tr>
+        <th scope="row">Bug Tracking</th>
+        <td>Service Now Drive IT</td>
+      </tr>
+      <tr>
+        <th scope="row">SDLC</th>
+        <td>Waterfall, Agile</td>
+      </tr>
+      <tr>
+        <th scope="row">Cloud Technologies</th>
+        <td>AWS, Azure</td>
+      </tr>
+      <tr>
+        <th scope="row">Web/Application Servers</th>
+        <td>IBM WAS, Apache Tomcat</td>
+      </tr>
+      <tr>
+        <th scope="row">Artifactories</th>
+        <td>Nexus, Artifactory</td>
+      </tr>
+      <tr>
+        <th scope="row">Code Quality Tools</th>
+        <td>SonarQube, AppScan, Checkmarx</td>
+      </tr>
+      <tr>
+        <th scope="row">Continuous Monitoring</th>
+        <td>Nagios</td>
+      </tr>
+      <tr>
+        <th scope="row">Virtualization</th>
+        <td>Nagios</td>
+      </tr>
+      <tr>
+        <th scope="row">Operating Systems</th>
+        <td>Linux, Windows</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section id="work-experience" class="section">
+  <h3>Work Experience</h3>
+  <h4>DevOps Sr. Engineer</h4>
+  <h5>TCS | Sept 2022 - Till date</h5>
+  <p>
+    Configuring and maintaining CICD pipelines for applications with various technology stacks.
+  </p>
+  <ul>
+    <li><strong>Configured and maintained</strong> diverse CI/CD pipelines for applications across various tech stacks.</li>
+
+    <li><strong>Developed CI/CD pipelines</strong> using GitHub Actions for seamless deployments on AKS, Azure AppService, AWS EBS, and AWS Lambda.</li>
+
+    <li><strong>Enabled automated code compilation</strong> upon developer check-ins by integrating Maven and Gradle.</li>
+
+    <li><strong>Enhanced dependency management</strong> by seamlessly integrating JFrog Artifactory into pipelines.</li>
+
+    <li><strong>Ensured code security</strong> with integrated SonarQube and Checkmarx for automated security scans.</li>
+
+    <li><strong>Facilitated integration and load testing</strong> by integrating Selenium and Stormrunner.</li>
+
+    <li><strong>Established deployment governance</strong> with ServiceNow DriveIT change validation, ensuring validation before deployment.</li>
+
+    <li><strong>Implemented Jenkins pipelines</strong> utilizing shared libraries for efficient code management.</li>
+
+    <li><strong>Unified Maven/Gradle builds, JFrog Artifactory, Sonar, Checkmarx, and ServiceNow</strong> within Jenkins pipelines.</li>
+
+    <li><strong>Developed Jenkins-based reporting</strong> to track deployment details for all repositories using Jenkins and GitHub Actions pipelines.</li>
+</ul>
+
+  <h5>Environment: GitHub actions, Docker, Kubernetes</h5>
+  <h4>AWS/DevOps Engineer</h4>
+  <h5>Cognizant | Dec 2018 - Sept 2022</h5>
+  <p>
+    Deploying, managing, operating scalable, highly available and fault-tolerant systems on AWS.
+  </p>
+  <ul>
+    <li><strong>Managed AWS services</strong>, including VPC, EC2, S3, ELB, ASG, EBS, RDS, IAM, CloudFormation, Route 53, CloudWatch, and CloudFront.</li>
+
+    <li><strong>Proficient in Amazon EC2 setup</strong>, VPC configuration, security group management, and RDS database setup with S3 backups.</li>
+
+    <li><strong>Established and managed Elastic Load Balancers (ELBs)</strong> for high availability.</li>
+
+    <li><strong>Implemented IAM</strong> for role, user, and group management, enhancing AWS security with Multi-Factor Authentication (MFA).</li>
+
+    <li><strong>Monitored EC2 instances</strong> with CloudWatch, overseeing volume snapshots and retention policies for backups.</li>
+
+    <li><strong>Enabled S3 versioning</strong> and utilized Amazon Glacier for archiving.</li>
+
+    <li><strong>Developed CI/CD pipelines</strong> integrating GitLab across geographically separated hosting zones in AWS and on-premises.</li>
+
+    <li><strong>Automated infrastructure</strong> with Ansible playbooks.</li>
+
+    <li><strong>Achieved 85% manual effort reduction</strong> by fully automating CI build and deployment processes with Jenkins and Docker.</li>
+
+    <li><strong>Created Dockerfiles and Docker Compose files</strong> for image building.</li>
+
+    <li><strong>Integrated Ansible</strong> seamlessly into Jenkins pipelines.</li>
+
+    <li><strong>Developed Bash scripts</strong> to augment automation efforts.</li>
+
+    <li><strong>Utilized Nagios</strong> for comprehensive monitoring, logging, and alerting.</li>
+
+    <li><strong>Conducted code analysis and quality checks</strong> using SonarQube.</li>
+</ul>
+
+  <h5>Environment: GitHub, Ansible, Jenkins, Docker, Amazon web services</h5>
+  <h4>DevOps/Build & Release Engineer</h4>
+  <h5>Accenture | May 2017 - Dec 2018</h5>
+  <p>
+    Configuring and maintaining CICD pipelines for applications with various technology stacks.
+  </p>
+ <ul>
+    <li><strong>Integrated GIT</strong> into Jenkins to automate the code check-out process.</li>
+
+    <li><strong>Managed the source codes repository</strong> of multiple development applications using GIT version control tool.</li>
+
+    <li><strong>Integrated MAVEN</strong> with Jenkins to automate the build process.</li>
+
+    <li><strong>Created and managed Jenkins jobs</strong> that will be triggered automatically twice a day, picking the latest build and deploying it to multiple environments.</li>
+
+    <li><strong>Created Jenkins files</strong> and made Jenkins configuration management changes.</li>
+
+    <li><strong>Developed and implemented a Jenkins infrastructure</strong> that automated the deployment of code for the applications teams, reducing deployment time from days to minutes.</li>
+
+    <li><strong>Developed and managed Jenkins pipelines</strong> as part of CICD.</li>
+
+    <li><strong>Conducted user management</strong> to enforce security.</li>
+
+    <li><strong>Written automated tests</strong> in Java using Selenium.</li>
+
+    <li><strong>Collaborated with scrum and development teams</strong> to oversee bug tracking, test automation, and releases.</li>
+</ul>
+
+  <h5>Environment: Maven, Jenkins, GIT, Apache Tomcat, Java</h5>
+  <h4>Linux System Administrator</h4>
+  <h5>Accenture | Dec 2016 - May 2017</h5>
+  <p>
+    Monitoring and maintaing Linux servers.
+  </p>
+  <ul>
+    <li><strong>Monitored Linux servers</strong> and troubleshooted various programs and services.</li>
+
+    <li><strong>Provided professional, technical support</strong> to employees and clients.</li>
+
+    <li><strong>Used bash scripting</strong> to automate and monitor Linux processes.</li>
+
+    <li><strong>Set up different services</strong> based on client requirements and utilized MySQL for database management.</li>
+
+    <li><strong>Installed and configured Webserver (Apache 2.2.17), MySQL 5.5, and PHP</strong> in a LAMP stack.</li>
+
+    <li><strong>Collaborated on network security projects</strong> and worked with tools like Burp Suite, Kali Linux, Metasploit, Nmap, tcpdump, Wireshark.</li>
+
+    <li><strong>Managed user accounts</strong>, including creating and managing users/groups.</li>
+
+    <li><strong>Provided support for server and workstation upgrades</strong>, backup and disaster recovery monitoring, user account setup, and security administration.</li>
+
+    <li><strong>Created disk partitions and file systems</strong> and extended storage space using Logical Volume Manager.</li>
+
+    <li><strong>Managed user groups</strong>, monitored system status/health using Linux commands, and utilized Nagios system monitoring.</li>
+
+    <li><strong>Managed volume and file system resizing</strong> according to usage requirements.</li>
+</ul>
+
+  <h5>Environment: Ubuntu, RedHat Linux, Nagios</h5>
+  <h4>Automation Test Engineer</h4>
+  <h5>Accenture | Aug 2013 - Dec 2016</h5>
+  <p>
+    Automating manual tests for web and windows applications.
+  </p>
+ <ul>
+    <li><strong>Played an important role</strong> as a test engineer.</li>
+
+    <li><strong>Wrote test scenarios</strong> according to client requirements, created test cases, and executed them.</li>
+
+    <li><strong>Performed smoke tests, regression tests, and system testing.</strong></li>
+
+    <li><strong>Played a key role</strong> in bug identification along with determining its root cause.</li>
+
+    <li><strong>Wrote and executed</strong> both manual and automation tests.</li>
+
+    <li><strong>Contributed to automation framework creation</strong>, which significantly reduced test effort and increased test coverage.</li>
+
+    <li><strong>Automated regression tests</strong> using hand-coded test methods in Java using Eclipse and Python using Pycharm.</li>
+
+    <li><strong>Automated tests</strong> using Selenium with Java/Python.</li>
+
+    <li><strong>Identified critical bugs</strong> involving complex workflow.</li>
+
+    <li><strong>Received multiple accolades</strong> from the client.</li>
+</ul>
+
+  <h5>Environment: C#, Python, Visual Studio, Pycharm</h5>
+</section>
+<section id="education" class="section">
+  <h3>Education</h3>
+  <h4>Bachelors in Technology | SRM University, Chennai | 2009-2013</h4>
+</section>
